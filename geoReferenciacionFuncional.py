@@ -2,6 +2,7 @@ import plotly.express as px
 import pandas as pd
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
+import waitress
 
 # Load the data from the Excel file
 #df = pd.read_excel("/informacion/DireccionesCompradoresAntiguos.xlsx")
