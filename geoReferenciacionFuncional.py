@@ -2,7 +2,6 @@ import plotly.express as px
 import pandas as pd
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
-#import waitress
 
 # Load the data from the Excel file
 #df = pd.read_excel("/informacion/DireccionesCompradoresAntiguos.xlsx")
@@ -89,6 +88,6 @@ def update_graph(selected_projects, selected_localities):
 
 # Run the Dash app
 if __name__ == '__main__':
-    app.run_server(debug=False, port=8090)
+    app.run_server(debug=False)
     #from waitress import serve
     #serve(app, host="127.0.0.1", port=8080)
