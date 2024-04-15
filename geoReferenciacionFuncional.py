@@ -5,7 +5,8 @@ from dash.dependencies import Input, Output
 
 # Load the data from the Excel file
 #df = pd.read_excel("/informacion/DireccionesCompradoresAntiguos.xlsx")
-df = pd.read_excel("C:/Users/cesar.gil/Downloads/DireccionesCompradoresAntiguos.xlsx")
+df = pd.read_excel("/DireccionesCompradoresAntiguos.xlsx")
+#df = pd.read_excel("C:/Users/cesar.gil/Downloads/DireccionesCompradoresAntiguos.xlsx")
 df = df.dropna(subset=['CY', 'CX'])
 df.fillna({'LOCALIDAD': "Sin información"}, inplace=True)
 df['cuenta'] = 1
